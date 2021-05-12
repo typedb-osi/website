@@ -6,7 +6,7 @@
     "build": "node main.js",
     "watch": "nodemon --watch src --watch layouts -e md,css,hbs,js -x \"npm run build\""
   },
-  "dependencies": {
+  "devDependencies": {
     "jstransformer-handlebars": "^1.1.0",
     "metalsmith": "^2.3.0",
     "metalsmith-autotoc": "^0.1.5",
