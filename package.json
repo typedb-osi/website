@@ -1,0 +1,17 @@
+{
+  "name": "typedb-osi",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "build": "node main.js",
+    "watch": "nodemon --watch src --watch layouts -e md,css,hbs,js -x \"npm run build\""
+  },
+  "dependencies": {
+    "jstransformer-handlebars": "^1.1.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-autotoc": "^0.1.5",
+    "metalsmith-layouts": "^2.3.1",
+    "metalsmith-markdown": "^1.3.0",
+    "nodemon": "^2.0.7"
+  }
+}

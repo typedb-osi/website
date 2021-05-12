@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/sidebar.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="toc">
+            <ul class="toc-list-1">
+                {{#each toc}}
+                    <li class="toc-item-1">
+                        <a class="toc-text-1" href="#{{this.id}}">{{this.text}}</a>
+                        <ul class="toc-list-2" style="display: none;">
+                            {{#each this.children}}
+                                <li class="toc-item-2">
+                                    <div class="toc-indicator-2" style="display: none;"></div>
+                                    <a class="toc-text-2" href="#{{this.id}}">{{this.text}}</a>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="contents">
+            {{{ contents }}}
+        </div>
+    </div>
+</body>
+</html>
