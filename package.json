@@ -1,10 +1,13 @@
 {
   "name": "typedb-osi",
   "version": "1.0.0",
-  "main": "main.js",
   "scripts": {
-    "build": "node main.js",
+    "build": "node build.js",
+    "serve": "node server.js",
     "watch": "nodemon --watch src --watch layouts -e md,css,hbs,js -x \"npm run build\""
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "jstransformer-handlebars": "^1.1.0",
