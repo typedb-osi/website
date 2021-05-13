@@ -7,9 +7,7 @@
     "watch": "nodemon --watch src --watch layouts -e md,css,hbs,js -x \"npm run build\""
   },
   "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
+    "express": "^4.17.1",
     "jstransformer-handlebars": "^1.1.0",
     "metalsmith": "^2.3.0",
     "metalsmith-autotoc": "^0.1.5",
