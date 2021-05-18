@@ -39,7 +39,7 @@ Metalsmith(__dirname)
     .use(modifyDocsPath())
     .use(markdown())
     .use(autotoc({
-        selector: 'h2,h3',
+        selector: 'h2',
     }))
     .use(layouts({
         directory: 'layouts',
