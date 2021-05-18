@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: normal;
+    background-color: #1D1354;
+    color: white;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 16px 0;
+}
+
+h4 {
+    margin: 16px 0;
+}
+
+li, p {
+    line-height: 24px;
+}
+
+a {
+    color: #02DAC9;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #544899;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #140B44;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px 24px;
+}
+
+tr:nth-child(even) {
+    background-color: #1D1354;
+}
+
+hr {
+    border: 1px none rgba(255, 255, 255, 0.5);
+    border-bottom-style: solid;
+    margin: 24px 0;
+}
+
+blockquote {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2px 24px;
+    background-color: #180F49;
+    border-left: 3px solid #02DAC9;
+}
+

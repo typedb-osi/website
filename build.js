@@ -3,7 +3,18 @@ const markdown = require('metalsmith-markdown');
 const layouts = require('metalsmith-layouts');
 const autotoc = require('metalsmith-autotoc');
 
-function filterDocs() {
+function exclude() {
+    return function(files, metalsmith, done) {
+        for (let file in files) {
+            if (/^\.gitignore|\.circleci/.test(file)) {
+                delete files[file];
+            }
+        }
+        done();
+    }
+}
+
+function modifyDocsPath() {
     return function(files, metalsmith, done) {
         for (let file in files) {
             if (/^docs\//.test(file)) {
@@ -24,7 +35,8 @@ Metalsmith(__dirname)
     .metadata({
         title: 'TypeDB OSI'
     })
-    .use(filterDocs())
+    .use(exclude())
+    .use(modifyDocsPath())
     .use(markdown())
     .use(autotoc({
         selector: 'h2,h3',
